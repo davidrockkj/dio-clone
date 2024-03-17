@@ -9,13 +9,15 @@ import {
   UserPicture,
   Input
 } from "./styles"
+import { Button } from "../Button"
 
 const Header = () => {
   return (
     <Wrapper>
       <HeaderContainer>
         <Row>
-          
+          <MenuRight href="#" >Home</MenuRight>
+          <Button ></Button>
         </Row>
       </HeaderContainer>
     </Wrapper>
