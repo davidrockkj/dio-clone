@@ -3,6 +3,7 @@
 import banner from '../../assets/banner.png'
 import { Button } from '../../components/Button'
 import { Header } from '../../components/Header'
+import { Input } from '../../components/Input'
 
 import {
   Container,
@@ -34,7 +35,7 @@ const Login = () => {
           />
         </div>
         <div>
-          <img src={banner} alt='Imagem principal' />
+          <Input placeholder='email' />
         </div>
       </Container>
     </>
