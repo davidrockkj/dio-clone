@@ -1,4 +1,5 @@
 // import { Link } from 'react-router-dom'
+import { MdEmail, MdLock } from 'react-icons/md'
 
 import { Button } from '../../components/Button'
 import { Header } from '../../components/Header'
@@ -29,10 +30,10 @@ const Login = () => {
         <Column>
           <Wrapper>
             <TitleLogin>Faça seu cadastro</TitleLogin>
-            <TitleLogin>Faça seu login e make the change._</TitleLogin>
+            <SubLogin>Faça seu login e make the change._</SubLogin>
             <form>
-              <Input placeholder='Email' />
-              <Input placeholder='Senha' type='password' />
+              <Input placeholder='Email' leftIcon={<MdEmail />} />
+              <Input placeholder='Senha' type='password' leftIcon={<MdLock />} />
               <Button title='Entrar' variant='secundary' />
             </form>
             <Row>
