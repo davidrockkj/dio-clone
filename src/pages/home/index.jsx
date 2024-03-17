@@ -7,7 +7,6 @@ const Home = () => {
   return (
     <>
       <Header />
-      <h1>Home</h1>
       <Button title='Teste 1' />
       <Button title='Teste 2' variant='secondary' />
       <Link to='/login'>Fazer login</Link>
