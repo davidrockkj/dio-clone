@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 
 export const ButtonContainer = styled.button`
   background: #565656;
+  border: 2px solid #000;
   border-radius: 22px;
   position: relative;
 
