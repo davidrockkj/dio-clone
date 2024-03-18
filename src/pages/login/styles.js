@@ -36,7 +36,8 @@ export const Title = styled.h2`
   font-size: 32px;
   line-height: 44px;
 
-  width: 320px;
+  width: 80%;
+  min-width: 320px;
   margin-bottom: 20px;
 
   color: #fff;
