@@ -13,6 +13,8 @@ import { Button } from "../Button"
 import logo from '../../assets/logo-dio.png';
 
 const Header = ({ autenticado }) => {
+
+
   return (
     <Wrapper>
       <HeaderContainer>
@@ -35,7 +37,7 @@ const Header = ({ autenticado }) => {
             </>
           ) : (
             <>
-              <MenuRight href='#'>Home</MenuRight>
+              <MenuRight href='/'>Home</MenuRight>
               <Button title='Entrar' />
               <Button title='Cadastrar' />
             </>
