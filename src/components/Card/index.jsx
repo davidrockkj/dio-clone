@@ -13,10 +13,10 @@ import {
 const Card = () => {
   return (
     <CardContainer>
-      <ImageBackground />
+      <ImageBackground src='https://img.freepik.com/premium-vector/web-development-coding-programming-futuristic-banner-computer-code-laptop_3482-5582.jpg' />
       <Content>
         <UserInfo>
-          <UserPicture />
+          <UserPicture src='https://avatars.githubusercontent.com/u/62350916?v=4' />
           <div>
             <h4>David Rocha</h4>
             <p>Há 8 minutos</p>
