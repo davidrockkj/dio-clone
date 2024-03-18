@@ -1,4 +1,4 @@
-// import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router'
 
 import banner from '../../assets/banner.png'
 import { Button } from '../../components/Button'
@@ -12,6 +12,13 @@ import {
 } from './styles'
 
 const Home = () => {
+
+  const navigate = useNavigate()
+
+  const handleClickSignin = () => {
+    navigate('/login');
+  }
+
   return (
     <>
       <Header />
@@ -30,7 +37,7 @@ const Home = () => {
           <Button
             title='Começar agora'
             variant='secundary'
-            onClick={ () => null }
+            onClick={ handleClickSignin }
           />
         </div>
         <div>
