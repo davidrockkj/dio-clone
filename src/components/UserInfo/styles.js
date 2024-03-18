@@ -38,5 +38,6 @@ export const Progress = styled.div`
     width: ${({percentual}) => percentual}%;
     height: 6px;
     background-color: #23DD7A;
+    border-radius: 3px;
   }
 `;
