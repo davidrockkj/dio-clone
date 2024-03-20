@@ -45,7 +45,7 @@ const Login = () => {
             <form onSubmit={handleSubmit(onSubmit)}>
               <Input name="email" control={control} placeholder='Email' leftIcon={<MdEmail />} />
               <Input name="password" control={control} placeholder='Senha' type='password' leftIcon={<MdLock />} />
-              <Button title='Entrar' variant='secundary' onClick={ handleClickSignin } type='submit' />
+              <Button title='Entrar' variant='secundary' type='submit' />
             </form>
             <Row>
               <EsqueciText>Esqueci minha senha</EsqueciText>
