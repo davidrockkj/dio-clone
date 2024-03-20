@@ -20,7 +20,7 @@ import {
 
 const Login = () => {
 
-  const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  const { control, register, handleSubmit, watch, formState: { errors } } = useForm();
   const onSubmit = data => console.log(data);
 
   const navigate = useNavigate()
