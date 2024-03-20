@@ -1,6 +1,7 @@
-// import { Link } from 'react-router-dom'
 import { MdEmail, MdLock } from 'react-icons/md'
 import { useNavigate } from 'react-router'
+import { useForm } from 'react-hook-form'
+
 import { Button } from '../../components/Button'
 import { Header } from '../../components/Header'
 import { Input } from '../../components/Input'
@@ -18,6 +19,9 @@ import {
 } from './styles'
 
 const Login = () => {
+
+  const { register, handleSubmit, watch, formState: { errors } } = useForm();
+  const onSubmit = data => console.log(data);
 
   const navigate = useNavigate()
 
