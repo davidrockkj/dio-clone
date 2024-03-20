@@ -1,3 +1,5 @@
+import { Controller } from 'react-hook-form';
+
 import {
   InputContainer,
   IconContainer,
@@ -8,7 +10,12 @@ const Input = ({ leftIcon, name, ...rest }) => {
   return (
     <InputContainer>
       {leftIcon ? (<IconContainer>{leftIcon}</IconContainer>) : null}
-      <InputText {...rest} />
+      <Controller
+        name={name}
+        control={control}
+        rules={{ required: true }}
+        render={ ({ field }) => <InputText {...field} {...rest} /> }
+      />
     </InputContainer>
   )
 }
