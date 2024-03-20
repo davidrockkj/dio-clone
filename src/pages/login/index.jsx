@@ -43,8 +43,8 @@ const Login = () => {
             <TitleLogin>Faça seu cadastro</TitleLogin>
             <SubLogin>Faça seu login e make the change._</SubLogin>
             <form>
-              <Input placeholder='Email' leftIcon={<MdEmail />} />
-              <Input placeholder='Senha' type='password' leftIcon={<MdLock />} />
+              <Input name="email" control={control} placeholder='Email' leftIcon={<MdEmail />} />
+              <Input name="password" control={control} placeholder='Senha' type='password' leftIcon={<MdLock />} />
               <Button title='Entrar' variant='secundary' onClick={ handleClickSignin } type='button' />
             </form>
             <Row>
